@@ -1,0 +1,50 @@
+version: '3.4'
+
+services:
+  mgp.audit.api:
+    image: ${DOCKER_REGISTRY-}mgpauditapi
+    build:
+      context: .
+      dockerfile: Auditoria/MGP.Audit.API/Dockerfile
+
+  mgp.authentication.api:
+    image: ${DOCKER_REGISTRY-}mgpauthenticationapi
+    build:
+      context: .
+      dockerfile: Autenticacion/MGP.Authentication.Api/Dockerfile
+
+
+  mgp.backoffice.api:
+    image: ${DOCKER_REGISTRY-}mgpbackofficeapi
+    build:
+      context: .
+      dockerfile: Backoffice/MGP.Backoffice.Api/Dockerfile
+
+
+  mgp.discapacidad.api:
+    image: ${DOCKER_REGISTRY-}mgpdiscapacidadapi
+    build:
+      context: .
+      dockerfile: Discapacidad/MGP.Discapacidad.API/Dockerfile
+
+
+  mgp.location.api:
+    image: ${DOCKER_REGISTRY-}mgplocationapi
+    build:
+      context: .
+      dockerfile: Locations/MGP.Location.API/Dockerfile
+
+
+  mgp.mistramites.api:
+    image: ${DOCKER_REGISTRY-}mgpmistramitesapi
+    build:
+      context: .
+      dockerfile: MisTramites/MGP.MisTramites/Dockerfile
+
+
+  mgp.apigateway:
+    image: ${DOCKER_REGISTRY-}mgpapigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/MGP.ApiGateway/Dockerfile
+

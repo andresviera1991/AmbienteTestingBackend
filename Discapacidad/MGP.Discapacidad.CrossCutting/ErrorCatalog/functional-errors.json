@@ -1,0 +1,144 @@
+﻿{
+  "Language": "es-ES",
+  "Messages": [
+    {
+      "Key": "NOT_NULL",
+      "Code": "001",
+      "Property": "{0}",
+      "Value": "El parámetro de entrada {0} no fue recibido."
+    },
+    {
+      "Key": "INVALID_FORMAT",
+      "Code": "002",
+      "Property": "{0}",
+      "Value": "El parámetro de entrada {0} tiene un formato inválido."
+    },
+    {
+      "Key": "MISSING_PARAMETERS",
+      "Code": "003",
+      "Property": "{0}",
+      "Value": "Uno o más parámetros no fueron proporcionados."
+    },
+    {
+      "Key": "NOT_FOUND",
+      "Code": "004",
+      "Property": "{0}",
+      "Value": "no existe."
+    },
+    {
+      "Key": "USER_ALREADY_EXISTS",
+      "Code": "005",
+      "Property": "{0}",
+      "Value": "El usuario {0} ya existe."
+    },
+    {
+      "Key": "SERVICE_UNAVAILABLE",
+      "Code": "006",
+      "Property": "{0}",
+      "Value": "Servicio no disponible."
+    },
+    {
+      "Key": "USER_NOT_EXISTS",
+      "Code": "007",
+      "Property": "{0}",
+      "Value": "El usuario no existe."
+    },
+    {
+      "Key": "TICKET_ALREADY_OPEN",
+      "Code": "007",
+      "Property": "{0}",
+      "Value": "Ya existe un ticket abierto de este tipo para el usuario."
+    },
+    {
+      "Key": "UPLOAD_DOCUMENT_ERROR",
+      "Code": "008",
+      "Property": "{0}",
+      "Value": "Error al subir el documento."
+    },
+    {
+      "Key": "DUPLICATE_DOCUMENT_TYPE_ID",
+      "Code": "009",
+      "Property": "{0}",
+      "Value": "Cada tipo de documento debe ser diferente."
+    },
+    {
+      "Key": "DOCUMENT_TOO_LARGE",
+      "Code": "010",
+      "Property": "{0}",
+      "Value": "El documento excede el tamaño máximo permitido de 20 MB."
+    },
+    {
+      "Key": "ERROR_SEND_EMAIL",
+      "Code": "011",
+      "Property": "{0}",
+      "Value": "Error en el envío del correo, alguien se pondrá en contacto contigo."
+    },
+    {
+      "Key": "ARGUMENT_NOT_PROVIDER",
+      "Code": "011",
+      "Property": "",
+      "Value": "Debe proporcionar al menos un argumento"
+    },
+    {
+      "Key": "INVALID_DATE",
+      "Code": "012",
+      "Property": "",
+      "Value": "la fecha seleccionada debe ser posterior a la fecha actual"
+    },
+    {
+      "Key": "TEMPLATE_ALREADY_EXISTS",
+      "Code": "013",
+      "Property": "",
+      "Value": "Ya existe una plantilla con ese nombre"
+    },
+    {
+      "Key": "TICKET_TYPE_NOT_FOUND",
+      "Code": "013",
+      "Property": "",
+      "Value": "Ticket Type Inexistente"
+    },
+    {
+      "Key": "TEMPLATE_NOT_FOUND",
+      "Code": "013",
+      "Property": "",
+      "Value": "Planilla inexistente"
+    },
+    {
+      "Key": "TICKET_NOT_FOUND",
+      "Code": "014",
+      "Property": "",
+      "Value": "El ticket no fue encontrado"
+    },
+    {
+      "Key": "DOCUMENT_NOT_FOUND",
+      "Code": "015",
+      "Property": "",
+      "Value": "El documento no fue encontrado"
+
+    },
+    {
+      "Key": "DOCUMENT_TYPE_NOT_FOUND",
+      "Code": "016",
+      "Property": "",
+      "Value": "Uno de los tipos de documento ingresados es incorrecto"
+    },
+    {
+      "Key": "VERIFY_EMAIL",
+      "Code": "017",
+      "Property": "",
+      "Value": "Verificar Correo Electrónico"
+    },
+    {
+      "Key": "TICKET_STATUS_NOT_FOUND",
+      "Code": "018",
+      "Property": "",
+      "Value": "Estado de Ticket Inexistente"
+    },
+    {
+      "Key": "CARD_PICKUP_NOT_FOUND",
+      "Code": "018",
+      "Property": "",
+      "Value": "Ese lugar para retirar la tarjeta no fue encontrado"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "MGP.ApiGateway": {
+      "commandName": "Project",
+      "launchUrl": "swagger/index.html",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:5439"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger/index.html",
+      "environmentVariables": {
+        "ASPNETCORE_HTTPS_PORTS": "5439"
+      },
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}

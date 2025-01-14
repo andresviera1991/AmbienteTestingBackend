@@ -1,0 +1,105 @@
+{
+  "LocationsRoutes": [
+
+    // [GET] LIST DEPARTMENTS BY PROVINCE ID
+    {
+      "UpstreamPathTemplate": "/api/v1/Department/Departments/{provinceId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/Department/Departments/{provinceId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.location.api",
+          "Port": 5436
+        }
+      ],
+      "SwaggerKey": "MGP.Locations",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST LOCALITIES BY DEPARTMENT ID
+    {
+      "UpstreamPathTemplate": "/api/v1/Locality/Localities/{departmentId}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/Locality/Localities/{departmentId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.location.api",
+          "Port": 5436
+        }
+      ],
+      "SwaggerKey": "MGP.Locations",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] GET LOCALITY BY ID
+    {
+      "UpstreamPathTemplate": "/api/v1/Locality/Locality/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/Locality/Locality/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.location.api",
+          "Port": 5436
+        }
+      ],
+      "SwaggerKey": "MGP.Locations",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST PROVINCES
+    {
+      "UpstreamPathTemplate": "/api/v1/Province/Provinces",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/Province/Provinces",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.location.api",
+          "Port": 5436
+        }
+      ],
+      "SwaggerKey": "MGP.Locations",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST STREETS
+    {
+      "UpstreamPathTemplate": "/api/v1/Street/Streets",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/Street/Streets",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.location.api",
+          "Port": 5436
+        }
+      ],
+      "SwaggerKey": "MGP.Locations",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    }
+  ]
+}

@@ -1,0 +1,449 @@
+{
+  "AuthenticationRoutes": [
+
+    // [POST] REGISTER
+    {
+      "UpstreamPathTemplate": "/api/v1/auth/register",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] REGISTER BY AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/auth/register-by-agent",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/register-by-agent",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] VALIDATE USER
+    {
+      "UpstreamPathTemplate": "/api/v1/auth/validate",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/auth/validate",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] LOGIN
+    {
+      "UpstreamPathTemplate": "/api/v1/auth/login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] NEW TOKENS
+    {
+      "UpstreamPathTemplate": "/api/v1/auth/newtokens",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/newtokens",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] LOGOUT
+    {
+      "UpstreamPathTemplate": "/api/v1/auth/logout",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/logout",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] CHANGE PASSWORD
+    {
+      "UpstreamPathTemplate": "/api/v1/password/change",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/password/change",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] SEND EMAIL RESET PASSWORD
+    {
+      "UpstreamPathTemplate": "/api/v1/password/send-email",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/password/send-email",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] RESET PASSWORD
+    {
+      "UpstreamPathTemplate": "/api/v1/password/reset",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/password/reset",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] USER (BY USER ID)
+    {
+      "UpstreamPathTemplate": "/api/v1/user/get",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/user/get",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] USER (FOR EMPLOYERS)
+    {
+      "UpstreamPathTemplate": "/api/v1/user/get-for-employee",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/user/get-for-employee",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST USER BY FILTERS (FOR EMPLOYERS)
+    {
+      "UpstreamPathTemplate": "/api/v1/user/list-by-filters",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/user/list-by-filters",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST USER IDS FILTERS (FOR EMPLOYERS)
+    {
+      "UpstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [PATCH] UPDATE USER
+    {
+      "UpstreamPathTemplate": "/api/v1/user/update",
+      "UpstreamHttpMethod": [ "Patch" ],
+      "DownstreamPathTemplate": "/api/v1/user/update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [PATCH] UPDATE USER
+    {
+      "UpstreamPathTemplate": "/api/v1/user/update-for-employee",
+      "UpstreamHttpMethod": [ "Patch" ],
+      "DownstreamPathTemplate": "/api/v1/user/update-for-employee",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [DELETE] USER
+    {
+      "UpstreamPathTemplate": "/api/v1/user/delete",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/v1/user/delete",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] LIST USER IDS BY FILTERS
+    {
+      "UpstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST GENDER
+    {
+      "UpstreamPathTemplate": "/api/v1/catalog/genders",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/genders",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST USER STATUS
+    {
+      "UpstreamPathTemplate": "/api/v1/catalog/userstatus",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/userstatus",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.authentication.api",
+          "Port": 5432
+        }
+      ],
+      "SwaggerKey": "MGP.Authentication",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    }
+  ]
+}

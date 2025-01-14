@@ -1,0 +1,897 @@
+{
+  "DiscapacidadRoutes": [
+
+    // [POST] CREATE CUD
+    {
+      "UpstreamPathTemplate": "/api/v1/ticket/create-cud",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/ticket/create-cud",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] CREATE CUD - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/create-cud",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/agent/create-cud",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] CUD - USER
+    {
+      "UpstreamPathTemplate": "/api/v1/ticket/get-cud",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/ticket/get-cud",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] CUD - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/get-cud",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/get-cud",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [PUT] CUD
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/update-cud",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/v1/agent/update-cud",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Area": "DISCAPACIDAD"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] CREATE SUBE
+    {
+      "UpstreamPathTemplate": "/api/v1/ticket/create-sube",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/ticket/create-sube",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] CREATE SUBE - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/create-sube",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/agent/create-sube",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] SUBE - USER
+    {
+      "UpstreamPathTemplate": "/api/v1/ticket/get-sube",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/ticket/get-sube",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] SUBE - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/get-sube",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/get-sube",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [PUT] SUBE
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/update-sube",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/v1/agent/update-sube",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Area": "DISCAPACIDAD"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] CREATE PARKING
+    {
+      "UpstreamPathTemplate": "/api/v1/ticket/create-parking",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/ticket/create-parking",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] CREATE PARKING - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/create-parking",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/agent/create-parking",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] PARKING - USER
+    {
+      "UpstreamPathTemplate": "/api/v1/ticket/get-parking",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/ticket/get-parking",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] PARKING - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/get-parking",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/get-parking",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [PUT] PARKING
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/update-parking",
+      "UpstreamHttpMethod": [ "Put" ],
+      "DownstreamPathTemplate": "/api/v1/agent/update-parking",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Area": "DISCAPACIDAD"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] REASSIGN TICKET - SUPERVISOR
+    {
+      "UpstreamPathTemplate": "/api/v1/supervisor/reassign-ticket",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/supervisor/reassign-ticket",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Role": "SUPERVISOR"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] LIST TICKET - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/list-tickets",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/agent/list-tickets",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Area": "DISCAPACIDAD"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST TICKET - USER
+    {
+      "UpstreamPathTemplate": "/api/v1/ticket/list",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/ticket/list",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] - CANCEL TICKET
+    {
+      "UpstreamPathTemplate": "/api/v1/ticket/cancel",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/ticket/cancel",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] - COUNT TICKET BY AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/count-tickets",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/count-tickets",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] ADD DOCUMENT
+    {
+      "UpstreamPathTemplate": "/api/v1/document/add",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/document/add",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] ADD DOCUMENT FOR EMPLOYEE
+    {
+      "UpstreamPathTemplate": "/api/v1/document/add-for-employee",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/document/add-for-employee",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [DELETE] DOCUMENT
+    {
+      "UpstreamPathTemplate": "/api/v1/document/delete",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/v1/document/delete",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] ADD TEMPLATE
+    {
+      "UpstreamPathTemplate": "/api/v1/document/add-template",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/document/add-template",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] UPDATE TEMPLATE
+    {
+      "UpstreamPathTemplate": "/api/v1/document/update-template",
+      "UpstreamHttpMethod": [ "Post" ],
+      "DownstreamPathTemplate": "/api/v1/document/update-template",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] GET TEMPLATES
+    {
+      "UpstreamPathTemplate": "/api/v1/document/get-templates",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/document/get-templates",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] REMOVE TEMPLATE
+    {
+      "UpstreamPathTemplate": "/api/v1/document/remove-template",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "DownstreamPathTemplate": "/api/v1/document/remove-template",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] CHAT MESSAGES
+    {
+      "UpstreamPathTemplate": "/api/v1/chat/get-messages",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/chat/get-messages",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET,POST] HUB CONNECTION
+    {
+      "UpstreamPathTemplate": "/chat/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "DownstreamPathTemplate": "/chat/{everything}",
+      "DownstreamScheme": "https",
+      "EnableWebSocket": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    // [GET] TICKET TYPES
+    {
+      "UpstreamPathTemplate": "/api/v1/catalog/ticket-types",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/ticket-types",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] TICKET STATUS
+    {
+      "UpstreamPathTemplate": "/api/v1/catalog/ticket-status",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/ticket-status",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] DOCUMENT TYPES
+    {
+      "UpstreamPathTemplate": "/api/v1/catalog/document-types",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/document-types",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] SIGNATURE OPTIONS
+    {
+      "UpstreamPathTemplate": "/api/v1/catalog/signature-options",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/signature-options",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] CUD EXPANSION OPTION
+    {
+      "UpstreamPathTemplate": "/api/v1/catalog/expansion-options",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/expansion-options",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] CARD PIKUP OPTIONS
+    {
+      "UpstreamPathTemplate": "/api/v1/catalog/card-pickup-options",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/card-pickup-options",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.discapacidad.api",
+          "Port": 5433
+        }
+      ],
+      "SwaggerKey": "MGP.Discapacidad",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    }
+  ]
+}

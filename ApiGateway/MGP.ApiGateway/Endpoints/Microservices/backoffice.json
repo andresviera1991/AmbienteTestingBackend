@@ -1,0 +1,513 @@
+{
+  "BackofficeRoutes": [
+
+    // [POST] REGISTER
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/register",
+      "UpstreamHttpMethod": [ "post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/register",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "RouteClaimsRequirement": {
+        "Role": "SUPERVISOR"
+      },
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] LOGIN
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/login",
+      "UpstreamHttpMethod": [ "post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] NEW TOKENS
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/new-tokens",
+      "UpstreamHttpMethod": [ "post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/new-tokens",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] LOGOUT
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/logout",
+      "UpstreamHttpMethod": [ "post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/logout",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] CHANGE PASSWORD
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/change-password",
+      "UpstreamHttpMethod": [ "post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/change-password",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] RESET PASSWORD SOLICITUDE
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/reset-password",
+      "UpstreamHttpMethod": [ "post" ],
+      "DownstreamPathTemplate": "/api/v1/auth/reset-password",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] MENU
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/menu/get",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/menu/get",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] AGENT (AGENT)
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/agent/get",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/get",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] AGENT (SUPERVISOR)
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/supervisor/get-agent",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/supervisor/get-agent",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [PUT] UPDATE AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/agent/update",
+      "UpstreamHttpMethod": [ "put" ],
+      "DownstreamPathTemplate": "/api/v1/agent/update",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Role": "ADMIN"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST AGENT BY FILTERS
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/agent/list-by-filters",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/list-by-filters",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "Role": "SUPERVISOR,ADMIN" 
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST AGENT BY ticket type
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/agent/list-by-ticket-type-id",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/list-by-ticket-type-id",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [POST] ADD AGENT LEAVE
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/agent/add-leave",
+      "UpstreamHttpMethod": [ "post" ],
+      "DownstreamPathTemplate": "/api/v1/agent/add-leave",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST AGENTS LEAVE
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/agent/list-agent-leave",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/list-agent-leave",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [PATCH] AGENT LEAVE
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/agent/agent-leave",
+      "UpstreamHttpMethod": [ "patch" ],
+      "DownstreamPathTemplate": "/api/v1/agent/agent-leave",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] NEXT AVAILABLE AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/agent/next-available-agent",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/next-available-agent",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] AREAS
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/catalog/areas",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/areas",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] ROLES
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/catalog/roles",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/roles",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] TICKET BY AREA
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/catalog/ticketstype",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/ticketstype",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] LIST TICKET STATUS
+    {
+      "UpstreamPathTemplate": "/api/v1/backoffice/catalog/user-status",
+      "UpstreamHttpMethod": [ "get" ],
+      "DownstreamPathTemplate": "/api/v1/catalog/user-status",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.backoffice.api",
+          "Port": 5434
+        }
+      ],
+      "SwaggerKey": "MGP.BackofficeAuth",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    }
+  ]
+}

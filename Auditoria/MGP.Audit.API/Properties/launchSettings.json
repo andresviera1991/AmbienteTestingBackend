@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "environmentVariables": {
+        "ASPNETCORE_HTTP_PORTS": "5437"
+      },
+      "publishAllPorts": true,
+      "useSSL": false
+    }
+  }
+}

@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{591C7E2A-D730-443C-9B96-DDD056BD0F39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{160BB4E6-B770-420E-9D3D-54A5050D1301}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-entrypoint", "1-entrypoint", "{743C225A-9A2F-4798-A0C6-96656E6D03A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-core", "2-core", "{694A9898-F86D-4BF2-97D4-6F8D666A74E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-infrastructure", "3-infrastructure", "{FEFF13E2-623D-449E-B328-658FE3EB5DA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Discapacidad.Application", "MGP.Discapacidad.Application\MGP.Discapacidad.Application.csproj", "{1BCD374B-66D7-426F-A3C5-C62750BC234E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Discapacidad.API", "MGP.Discapacidad.API\MGP.Discapacidad.API.csproj", "{D8970651-6CDC-41AF-B255-4DE19142B3C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Discapacidad.CrossCutting", "MGP.Discapacidad.CrossCutting\MGP.Discapacidad.CrossCutting.csproj", "{4D3F1A10-21BD-4196-9096-4626231C401A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Discapacidad.Domain", "MGP.Discapacidad.Domain\MGP.Discapacidad.Domain.csproj", "{71B4E567-8B11-4C2E-A846-DE1D604E57ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Discapacidad.Persistance", "MGP.Discapacidad.Persistance\MGP.Discapacidad.Persistance.csproj", "{C5B1DA97-495B-4279-9893-0C324376B8E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Discapacidad.Test", "MGP.Discapacidad.Test\MGP.Discapacidad.Test.csproj", "{DAA55FF1-8F05-4E86-BBB3-B6100287C427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGP.Discapacidad.Client", "MGP.Discapacidad.Client\MGP.Discapacidad.Client.csproj", "{B842C6D4-34E1-487A-9E2B-75C7D905B579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BCD374B-66D7-426F-A3C5-C62750BC234E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BCD374B-66D7-426F-A3C5-C62750BC234E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BCD374B-66D7-426F-A3C5-C62750BC234E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BCD374B-66D7-426F-A3C5-C62750BC234E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8970651-6CDC-41AF-B255-4DE19142B3C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8970651-6CDC-41AF-B255-4DE19142B3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8970651-6CDC-41AF-B255-4DE19142B3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8970651-6CDC-41AF-B255-4DE19142B3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3F1A10-21BD-4196-9096-4626231C401A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3F1A10-21BD-4196-9096-4626231C401A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3F1A10-21BD-4196-9096-4626231C401A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3F1A10-21BD-4196-9096-4626231C401A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B4E567-8B11-4C2E-A846-DE1D604E57ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B4E567-8B11-4C2E-A846-DE1D604E57ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B4E567-8B11-4C2E-A846-DE1D604E57ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B4E567-8B11-4C2E-A846-DE1D604E57ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B1DA97-495B-4279-9893-0C324376B8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B1DA97-495B-4279-9893-0C324376B8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B1DA97-495B-4279-9893-0C324376B8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B1DA97-495B-4279-9893-0C324376B8E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAA55FF1-8F05-4E86-BBB3-B6100287C427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAA55FF1-8F05-4E86-BBB3-B6100287C427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAA55FF1-8F05-4E86-BBB3-B6100287C427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAA55FF1-8F05-4E86-BBB3-B6100287C427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B842C6D4-34E1-487A-9E2B-75C7D905B579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B842C6D4-34E1-487A-9E2B-75C7D905B579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B842C6D4-34E1-487A-9E2B-75C7D905B579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B842C6D4-34E1-487A-9E2B-75C7D905B579}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{743C225A-9A2F-4798-A0C6-96656E6D03A5} = {591C7E2A-D730-443C-9B96-DDD056BD0F39}
+		{694A9898-F86D-4BF2-97D4-6F8D666A74E7} = {591C7E2A-D730-443C-9B96-DDD056BD0F39}
+		{FEFF13E2-623D-449E-B328-658FE3EB5DA1} = {591C7E2A-D730-443C-9B96-DDD056BD0F39}
+		{1BCD374B-66D7-426F-A3C5-C62750BC234E} = {694A9898-F86D-4BF2-97D4-6F8D666A74E7}
+		{D8970651-6CDC-41AF-B255-4DE19142B3C4} = {743C225A-9A2F-4798-A0C6-96656E6D03A5}
+		{4D3F1A10-21BD-4196-9096-4626231C401A} = {FEFF13E2-623D-449E-B328-658FE3EB5DA1}
+		{71B4E567-8B11-4C2E-A846-DE1D604E57ED} = {694A9898-F86D-4BF2-97D4-6F8D666A74E7}
+		{C5B1DA97-495B-4279-9893-0C324376B8E7} = {FEFF13E2-623D-449E-B328-658FE3EB5DA1}
+		{DAA55FF1-8F05-4E86-BBB3-B6100287C427} = {160BB4E6-B770-420E-9D3D-54A5050D1301}
+		{B842C6D4-34E1-487A-9E2B-75C7D905B579} = {FEFF13E2-623D-449E-B328-658FE3EB5DA1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1121CE22-C2B3-4ADE-9FE6-D8CB8E910A93}
+	EndGlobalSection
+EndGlobal

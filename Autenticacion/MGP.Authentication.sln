@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{591C7E2A-D730-443C-9B96-DDD056BD0F39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{160BB4E6-B770-420E-9D3D-54A5050D1301}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-entrypoint", "1-entrypoint", "{743C225A-9A2F-4798-A0C6-96656E6D03A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-core", "2-core", "{694A9898-F86D-4BF2-97D4-6F8D666A74E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-infrastructure", "3-infrastructure", "{FEFF13E2-623D-449E-B328-658FE3EB5DA1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Authentication.Application", "MGP.Authentication.Application\MGP.Authentication.Application.csproj", "{CB4A8C24-3F91-4C3B-930C-993D6A8F436F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Authentication.Domain", "MGP.Authentication.Domain\MGP.Authentication.Domain.csproj", "{2AE690E9-98D1-4784-B9D3-673FDBAACDE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Authentication.CrossCutting", "MGP.Authentication.CrossCutting\MGP.Authentication.CrossCutting.csproj", "{60007708-2AEA-47B9-8FF0-DC8F90398EBF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Authentication.Persistance", "MGP.Authentication.Persistance\MGP.Authentication.Persistance.csproj", "{159810BF-AD2F-4D24-A46D-2F56929AE0CE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Authentication.API", "MGP.Authentication.Api\MGP.Authentication.API.csproj", "{B70C646E-8481-4054-B6BA-89A9A9083842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MGP.Authentication.Test", "MGP.Authentication.Test\MGP.Authentication.Test.csproj", "{41173DFC-CB5F-4D0A-887A-AC8A96EB25A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB4A8C24-3F91-4C3B-930C-993D6A8F436F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB4A8C24-3F91-4C3B-930C-993D6A8F436F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB4A8C24-3F91-4C3B-930C-993D6A8F436F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB4A8C24-3F91-4C3B-930C-993D6A8F436F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE690E9-98D1-4784-B9D3-673FDBAACDE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE690E9-98D1-4784-B9D3-673FDBAACDE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE690E9-98D1-4784-B9D3-673FDBAACDE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE690E9-98D1-4784-B9D3-673FDBAACDE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60007708-2AEA-47B9-8FF0-DC8F90398EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60007708-2AEA-47B9-8FF0-DC8F90398EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60007708-2AEA-47B9-8FF0-DC8F90398EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60007708-2AEA-47B9-8FF0-DC8F90398EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159810BF-AD2F-4D24-A46D-2F56929AE0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159810BF-AD2F-4D24-A46D-2F56929AE0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159810BF-AD2F-4D24-A46D-2F56929AE0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159810BF-AD2F-4D24-A46D-2F56929AE0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B70C646E-8481-4054-B6BA-89A9A9083842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B70C646E-8481-4054-B6BA-89A9A9083842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B70C646E-8481-4054-B6BA-89A9A9083842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B70C646E-8481-4054-B6BA-89A9A9083842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41173DFC-CB5F-4D0A-887A-AC8A96EB25A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41173DFC-CB5F-4D0A-887A-AC8A96EB25A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41173DFC-CB5F-4D0A-887A-AC8A96EB25A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41173DFC-CB5F-4D0A-887A-AC8A96EB25A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{743C225A-9A2F-4798-A0C6-96656E6D03A5} = {591C7E2A-D730-443C-9B96-DDD056BD0F39}
+		{694A9898-F86D-4BF2-97D4-6F8D666A74E7} = {591C7E2A-D730-443C-9B96-DDD056BD0F39}
+		{FEFF13E2-623D-449E-B328-658FE3EB5DA1} = {591C7E2A-D730-443C-9B96-DDD056BD0F39}
+		{CB4A8C24-3F91-4C3B-930C-993D6A8F436F} = {694A9898-F86D-4BF2-97D4-6F8D666A74E7}
+		{2AE690E9-98D1-4784-B9D3-673FDBAACDE2} = {694A9898-F86D-4BF2-97D4-6F8D666A74E7}
+		{60007708-2AEA-47B9-8FF0-DC8F90398EBF} = {FEFF13E2-623D-449E-B328-658FE3EB5DA1}
+		{159810BF-AD2F-4D24-A46D-2F56929AE0CE} = {FEFF13E2-623D-449E-B328-658FE3EB5DA1}
+		{B70C646E-8481-4054-B6BA-89A9A9083842} = {743C225A-9A2F-4798-A0C6-96656E6D03A5}
+		{41173DFC-CB5F-4D0A-887A-AC8A96EB25A1} = {160BB4E6-B770-420E-9D3D-54A5050D1301}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1121CE22-C2B3-4ADE-9FE6-D8CB8E910A93}
+	EndGlobalSection
+EndGlobal

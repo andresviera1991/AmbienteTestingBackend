@@ -1,0 +1,113 @@
+{
+  "MisTramitesRoutes": [
+
+    // [GET] LIST TICKET - USER
+    {
+      "UpstreamPathTemplate": "/api/v1/user/list-tickets",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/user/list-tickets",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.mistramites.api",
+          "Port": 5435
+        }
+      ],
+      "SwaggerKey": "MGP.MisTramites",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] TICKET - USER
+    {
+      "UpstreamPathTemplate": "/api/v1/user/get-ticket",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/user/get-ticket",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.mistramites.api",
+          "Port": 5435
+        }
+      ],
+      "RouteClaimsRequirement": {
+        "IsNeighbor": "True"
+      },
+      "SwaggerKey": "MGP.MisTramites",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [LIST] LIST TICKET - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/list-tickets",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/list-tickets",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.mistramites.api",
+          "Port": 5435
+        }
+      ],
+      "SwaggerKey": "MGP.MisTramites",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    },
+    // [GET] TICKET - AGENT
+    {
+      "UpstreamPathTemplate": "/api/v1/agent/get-ticket",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/agent/get-ticket",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.mistramites.api",
+          "Port": 5435
+        }
+      ],
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "SwaggerKey": "MGP.MisTramites",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    }
+  ]
+}

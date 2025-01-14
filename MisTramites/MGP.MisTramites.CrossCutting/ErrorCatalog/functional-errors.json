@@ -1,0 +1,30 @@
+﻿{
+  "Language": "es-ES",
+  "Messages": [
+    {
+      "Key": "NOT_NULL",
+      "Code": "001",
+      "Value": "El parámetro de entrada {0} no fue recibido."
+    },
+    {
+      "Key": "SERVICE_UNAVAILABLE",
+      "Code": "003",
+      "Value": "Servicio no disponible"
+    },
+    {
+      "Key": "ENDPOINT_NOT_FOUND",
+      "Code": "004",
+      "Value": "No se ha encontrado un metodo get asociado a este servicio."
+    },
+    {
+      "Key": "TICKET_NOT_FOUND",
+      "Code": "005",
+      "Value": "Ticket inexistente"
+    },
+    {
+      "Key": "USER_NOT_FOUND",
+      "Code": "005",
+      "Value": "No se ha encontrado ningun usuario con ese nombre o documento"
+    }
+  ]
+}

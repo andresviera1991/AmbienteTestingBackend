@@ -1,0 +1,105 @@
+﻿{
+  "Language": "es-ES",
+  "Messages": [
+    {
+      "Key": "NOT_NULL",
+      "Code": "001",
+      "Value": "El parámetro de entrada {0} no fue recibido."
+    },
+    {
+      "Key": "INVALID_FORMAT",
+      "Code": "002",
+      "Value": "El parámetro de entrada {0} tiene un formato inválido."
+    },
+    {
+      "Key": "NOT_FOUND",
+      "Code": "003",
+      "Value": "no existe."
+    },
+    {
+      "Key": "USER_ALREADY_EXISTS",
+      "Code": "004",
+      "Value": "El usuario ya existe."
+    },
+    {
+      "Key": "USER_NOT_EXISTS",
+      "Code": "005",
+      "Value": "El usuario no existe."
+    },
+    {
+      "Key": "USER_DISABLED",
+      "Code": "006",
+      "Value": "Usuario bloqueado, por favor restablezca su contraseña."
+    },
+    {
+      "Key": "USER_NOT_ACTIVE",
+      "Code": "007",
+      "Value": "El usuario no está activado, por favor revise su correo electrónico para activar la cuenta."
+    },
+    {
+      "Key": "SERVICE_UNAVAILABLE",
+      "Code": "008",
+      "Value": "Servicio no disponible"
+    },
+    {
+      "Key": "MISSING_PARAMETERS",
+      "Code": "009",
+      "Value": "Uno o más parámetros no fueron proporcionados."
+    },
+    {
+      "Key": "INVALID_TOKEN",
+      "Code": "011",
+      "Value": "Token inválido"
+    },
+    {
+      "Key": "VERIFY_EMAIL",
+      "Code": "011",
+      "Value": "Verificar correo electrónico"
+    },
+    {
+      "Key": "INCORRECT_PASSWORD",
+      "Code": "012",
+      "Value": "La contraseña actual es incorrecta"
+    },
+    {
+      "Key": "SAME_PASSWORD",
+      "Code": "012",
+      "Value": "La contraseña no puede ser la misma que la anterior"
+    },
+    {
+      "Key": "ERROR_SEND_EMAIL_RESET_PASSWORD",
+      "Code": "013",
+      "Value": "Error al enviar el correo, por favor intente nuevamente."
+    },
+    {
+      "Key": "ERROR_SEND_EMAIL_VALIDATE_USER",
+      "Code": "013",
+      "Value": "Error al enviar el correo, intente iniciar sesión para enviarlo nuevamente."
+    },
+    {
+      "Key": "USER_DELETED",
+      "Code": "014",
+      "Value": "Esta cuenta ha sido eliminada. Debe reactivarla si quiere continuar operando"
+    },
+    {
+      "Key": "DOCUMENT_NUMBER_ERROR",
+      "Code": "015",
+      "Value": "Se esta intentando modificar un numero de documento ya existente."
+    },
+    {
+      "Key": "INVALID_DATE",
+      "Code": "016",
+      "Value": "Fecha Incorrecta."
+    },
+    {
+      "Key": "PARENT_DATA_REQUIRED",
+      "Code": "016",
+      "Value": "El dato del responsable '{0}' es requerido, por ser menor."
+    },
+    {
+      "Key": "PARENT_DATA_NOT_REQUIRED",
+      "Code": "016",
+      "Value": "El dato del responsable {0} no es requerido, por ser mayor"
+    }
+  ]
+}

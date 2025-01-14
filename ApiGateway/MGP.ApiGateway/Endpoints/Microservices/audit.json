@@ -1,0 +1,31 @@
+{
+  "AuditRoutes": [
+    // [GET] GET AUDITS
+    {
+      "UpstreamPathTemplate": "/api/v1/audit/audit",
+      "UpstreamHttpMethod": [ "Get" ],
+      "DownstreamPathTemplate": "/api/v1/audit/audit",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "mgp.audit.api",
+          "Port": 5437
+        }
+      ],
+      "SwaggerKey": "MGP.Audit",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "RouteClaimsRequirement": {
+        "IsEmployee": "True"
+      },
+      "RateLimitOptions": {
+        "EnableRateLimiting": true,
+        "Period": "1s",
+        "QuotaExceededMessage": "Has alcanzado el límite de solicitudes.",
+        "Limit": 1000000
+      }
+    }
+  ]
+}

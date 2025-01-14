@@ -1,0 +1,95 @@
+# .NET Core
+*.dll
+*.exe
+*.pdb
+*.dbmdl
+*.bak
+*.log
+*.swp
+*.suo
+*.user
+*.userosscache
+*.suo
+*.vscode/
+*.vscode/*
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# .NET Core Build Output
+bin/
+obj/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.nuspec
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Tooling
+*.dotCover
+*.coverage
+*.coveragexml
+*.testsettings
+*.trx
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# JetBrains Rider
+.idea/
+
+# Local User Preferences
+*.user
+*.userosscache
+*.suo
+*.suo
+*.sln.docstates
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+
+# Logs
+logs/
+*.log
+
+# Temporary Files
+*.tmp
+*.temp
+
+# DotCover
+*.dotCover
+
+# Backup files
+*.bak
+*.tmp
+*.swp
+
+# Entity Framework
+*.dbmdl
+*.bak
+
+# Visual Studio Code
+.vscode/
+
+# ASP.NET Identity
+*.token
+*.sdl
+*.seed
+/.vs
+
+#SonarQube
+/.sonarqube/
