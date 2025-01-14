@@ -51,7 +51,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Backoffice.Persistance"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Backoffice.Test", "Backoffice\MGP.Backoffice.Test\MGP.Backoffice.Test.csproj", "{D0621233-0366-4D1F-B0A3-77DB03436DBA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Location", "Location", "{98838417-8B50-4412-9729-5BCEB8551A1B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Locations", "Locations", "{98838417-8B50-4412-9729-5BCEB8551A1B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MGP.Location.API", "Locations\MGP.Location.API\MGP.Location.API.csproj", "{5B6A146E-2612-433C-A32A-3038A43AA88C}"
 EndProject
