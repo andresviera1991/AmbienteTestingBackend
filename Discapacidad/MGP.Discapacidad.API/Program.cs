@@ -116,11 +116,13 @@ public static class Program
         app.UseAuthentication();
         app.UseAuthorization();
 
-        app.UseStaticFiles(new StaticFileOptions
-        {
-            FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "../files")),
-            RequestPath = "/files"
-        });
+        //ESTE APARTADO ES PARA PODER ACCEDER A LOS ARCHIVOS DE LA CARPETA FILES CON EL CLIENTE PREVIA CONFIGURACION
+
+        //app.UseStaticFiles(new StaticFileOptions
+        //{
+        //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "/app/Discapacidad/files")),
+        //    RequestPath = "Discapacidad/files"
+        //});
 
         app.UseSwagger();
         app.UseSwaggerUI(c =>

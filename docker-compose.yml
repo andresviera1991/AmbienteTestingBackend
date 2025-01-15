@@ -48,3 +48,10 @@ services:
       context: .
       dockerfile: ApiGateway/MGP.ApiGateway/Dockerfile
 
+
+  mgp.notifications.api:
+    image: ${DOCKER_REGISTRY-}mgpnotificationsapi
+    build:
+      context: .
+      dockerfile: Notifications/MGP.Notifications.API/Dockerfile
+

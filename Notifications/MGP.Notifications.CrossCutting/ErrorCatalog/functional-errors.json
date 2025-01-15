@@ -1,0 +1,71 @@
+﻿  {
+  "Language": "en-US",
+    "Messages": [
+      {
+        "Key": "NOT_NULL",
+        "Code": "001",
+        "Property": "{0}",
+        "Value": "Input parameter {0} was not received."
+      },
+      {
+        "Key": "INVALID_FORMAT",
+        "Code": "002",
+        "Property": "{0}",
+        "Value": "Input parameter {0} has invalid format."
+      },
+      {
+        "Key": "MISSING_PARAMETERS",
+        "Code": "003",
+        "Property": "{0}",
+        "Value": "One or more parameters were not provided."
+      },
+      {
+        "Key": "NOT_FOUND",
+        "Code": "004",
+        "Property": "{0}",
+        "Value": "doesn't exist."
+      },
+      {
+        "Key": "USER_ALREADY_EXISTS",
+        "Code": "005",
+        "Property": "{0}",
+        "Value": "The user {0} already exists."
+      },
+      {
+        "Key": "SERVICE_UNAVAILABLE",
+        "Code": "006",
+        "Property": "{0}",
+        "Value": "Service Unavailable"
+      },
+      {
+        "Key": "USER_NOT_EXISTS",
+        "Code": "007",
+        "Property": "{0}",
+        "Value": "User doesn't exists."
+      },
+      {
+        "Key": "TICKET_ALREADY_OPEN",
+        "Code": "007",
+        "Property": "{0}",
+        "Value": "An open ticket of this type already exists for the user."
+      },
+      {
+        "Key": "UPLOAD_DOCUMENT_ERROR",
+        "Code": "008",
+        "Property": "{0}",
+        "Value": "Error uploading document."
+      },
+      {
+        "Key": "DUPLICATE_DOCUMENT_TYPE_ID",
+        "Code": "009",
+        "Property": "{0}",
+        "Value": "Each type of document must be different."
+      },
+      {
+        "Key": "DOCUMENT_TOO_LARGE",
+        "Code": "010",
+        "Property": "{0}",
+        "Value": "The document exceeds the maximum allowed size of 20 MB."
+      }
+    ]
+}

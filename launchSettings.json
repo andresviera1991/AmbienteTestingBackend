@@ -10,7 +10,8 @@
         "mgp.discapacidad.api": "StartDebugging",
         "mgp.location.api": "StartDebugging",
         "mgp.mistramites.api": "StartDebugging",
-        "mgp.apigateway": "StartDebugging"
+        "mgp.apigateway": "StartDebugging",
+        "mgp.notifications.api": "StartDebugging"
       }
     }
   }

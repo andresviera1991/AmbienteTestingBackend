@@ -8,9 +8,10 @@
     <GenerateDocumentFile>true</GenerateDocumentFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <UserSecretsId>081a63f0-9b27-4bab-b8dd-be3eb281daa6</UserSecretsId>
+    <UserSecretsId>394107ea-dec9-4faa-b616-044dd3f4d410</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,8 +31,6 @@
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
-    <PackageReference Include="Refit" Version="8.0.0" />
-    <PackageReference Include="Refit.HttpClientFactory" Version="8.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.7.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.7.0" />
@@ -40,10 +39,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MGP.Discapacidad.Application\MGP.Discapacidad.Application.csproj" />
-    <ProjectReference Include="..\MGP.Discapacidad.Client\MGP.Discapacidad.Client.csproj" />
-    <ProjectReference Include="..\MGP.Discapacidad.CrossCutting\MGP.Discapacidad.CrossCutting.csproj" />
-    <ProjectReference Include="..\MGP.Discapacidad.Persistance\MGP.Discapacidad.Persistance.csproj" />
+    <ProjectReference Include="..\MGP.Notifications.Application\MGP.Notifications.Application.csproj" />
+    <ProjectReference Include="..\MGP.Notifications.Persistance\MGP.Notifications.Persistance.csproj" />
   </ItemGroup>
 
 

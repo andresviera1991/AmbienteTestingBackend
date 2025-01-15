@@ -57,6 +57,16 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+  
+  mgp.notifications.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=5442
+    ports:
+      - 5442:5442
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
 
   mgp.apigateway:
     depends_on:
@@ -107,9 +117,9 @@ services:
       - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092
     networks:
       - kafka
-
 networks:
   kafka:
 
 volumes:
   pgdata:
+
