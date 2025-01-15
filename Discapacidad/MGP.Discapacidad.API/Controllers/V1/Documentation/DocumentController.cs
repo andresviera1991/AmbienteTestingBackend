@@ -105,7 +105,6 @@ public class DocumentController : ControllerBase
     }
     #endregion
 
-
     #region [DELETE] DELETE DOCUMENT
     [MapToApiVersion("1.0")]
     [HttpDelete("delete")]
@@ -214,7 +213,7 @@ public class DocumentController : ControllerBase
 
             return result.Code switch
             {
-                (int)Code.CREATED => Created("", result),
+                (int)Code.SUCCESS => Ok(result),
                 (int)Code.BAD_REQUEST => BadRequest(result),
                 (int)Code.NOT_FOUND => NotFound(result),
                 (int)Code.CONFLICT => Conflict(result),

@@ -6,7 +6,6 @@ using Xunit;
 using MGP.Discapacidad.CrossCutting.Enum;
 namespace MGP.Discapacidad.Test.Repository;
 
-#pragma warning disable
 public class DocumentRepositoryTest
 {
     private readonly DocumentRepository _repository;

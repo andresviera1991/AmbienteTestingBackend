@@ -107,6 +107,8 @@ public class DocumentRepository : IDocumentRepository
             query = query.Where(t => t.TicketTypeId == ticketTypeId);
         }
 
+        query = query.Where(t => t.Status);
+
         return await query.ToListAsync();
     }
 

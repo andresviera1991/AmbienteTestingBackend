@@ -2,6 +2,7 @@
 using MGP.Discapacidad.Application.UseCase.V1.User.Ticket.CUD.Create;
 using MGP.Discapacidad.CrossCutting.Messages;
 using MGP.Discapacidad.CrossCutting.MessagesManager;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -32,9 +33,12 @@ public class CreateTicketSubeRequestValidator : AbstractValidator<CreateTicketSu
                 FunctionalMessages.NOT_NULL, nameof(CreateTicketSubeRequest.CudCertificateNumber)));
 
         RuleFor(x => x.CudExpirationDate)
-            .NotEmpty()
-            .WithMessage(_messageManager.GetNotification(
-                FunctionalMessages.NOT_NULL, nameof(CreateTicketSubeRequest.CudExpirationDate)));
+        .NotEmpty()
+        .WithMessage(_messageManager.GetNotification(
+            FunctionalMessages.NOT_NULL, nameof(CreateTicketSubeRequest.CudExpirationDate)))
+        .Must(date => date >= DateTime.UtcNow.Date)
+        .WithMessage(_messageManager.GetNotification(
+            FunctionalMessages.INVALID_DATE, nameof(CreateTicketSubeRequest.CudExpirationDate)));
     }
 
     private void ValidateUniqueDocumentTypeId()

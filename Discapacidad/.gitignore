@@ -90,5 +90,4 @@ logs/
 *.sdl
 *.seed
 /.vs
-/files
 /images

@@ -116,11 +116,11 @@ public static class Program
         app.UseAuthentication();
         app.UseAuthorization();
 
-        //app.UseStaticFiles(new StaticFileOptions
-        //{
-        //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "../files")),
-        //    RequestPath = "/files"
-        //});
+        app.UseStaticFiles(new StaticFileOptions
+        {
+            FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "../files")),
+            RequestPath = "/files"
+        });
 
         app.UseSwagger();
         app.UseSwaggerUI(c =>

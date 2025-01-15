@@ -82,7 +82,7 @@ public class CreateTicketSubeHandler : IRequestHandler<CreateTicketSubeRequest, 
         {
             return await HandleException(Code.NOT_FOUND, [_messageManager.GetNotification(FunctionalMessages.CARD_PICKUP_NOT_FOUND)]);
         }
-        catch (Exception)
+        catch (Exception e)
         {
             return await HandleException(Code.SERVICE_UNAVAILABLE, [_messageManager.GetNotification(FunctionalMessages.SERVICE_UNAVAILABLE)]);
         }
