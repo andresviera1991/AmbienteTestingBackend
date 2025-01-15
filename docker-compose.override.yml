@@ -37,6 +37,7 @@ services:
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+      - /c/mgp-testing/AmbienteTestingBackend/Discapacidad/files:/app/files
 
   mgp.location.api:
     environment:

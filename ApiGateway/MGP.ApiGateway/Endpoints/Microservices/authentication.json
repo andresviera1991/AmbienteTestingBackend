@@ -6,7 +6,7 @@
       "UpstreamPathTemplate": "/api/v1/auth/register",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/auth/register",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -26,7 +26,7 @@
       "UpstreamPathTemplate": "/api/v1/auth/register-by-agent",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/auth/register-by-agent",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -50,7 +50,7 @@
       "UpstreamPathTemplate": "/api/v1/auth/validate",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/auth/validate",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -70,7 +70,7 @@
       "UpstreamPathTemplate": "/api/v1/auth/login",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/auth/login",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -90,7 +90,7 @@
       "UpstreamPathTemplate": "/api/v1/auth/newtokens",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/auth/newtokens",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -110,7 +110,7 @@
       "UpstreamPathTemplate": "/api/v1/auth/logout",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/auth/logout",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -130,7 +130,7 @@
       "UpstreamPathTemplate": "/api/v1/password/change",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/password/change",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -157,7 +157,7 @@
       "UpstreamPathTemplate": "/api/v1/password/send-email",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/password/send-email",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -177,7 +177,7 @@
       "UpstreamPathTemplate": "/api/v1/password/reset",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/password/reset",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -197,7 +197,7 @@
       "UpstreamPathTemplate": "/api/v1/user/get",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/user/get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -224,7 +224,7 @@
       "UpstreamPathTemplate": "/api/v1/user/get-for-employee",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/user/get-for-employee",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -251,7 +251,7 @@
       "UpstreamPathTemplate": "/api/v1/user/list-by-filters",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/user/list-by-filters",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -278,7 +278,7 @@
       "UpstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -305,7 +305,7 @@
       "UpstreamPathTemplate": "/api/v1/user/update",
       "UpstreamHttpMethod": [ "Patch" ],
       "DownstreamPathTemplate": "/api/v1/user/update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -332,7 +332,7 @@
       "UpstreamPathTemplate": "/api/v1/user/update-for-employee",
       "UpstreamHttpMethod": [ "Patch" ],
       "DownstreamPathTemplate": "/api/v1/user/update-for-employee",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -359,7 +359,7 @@
       "UpstreamPathTemplate": "/api/v1/user/delete",
       "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamPathTemplate": "/api/v1/user/delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -386,7 +386,7 @@
       "UpstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -410,7 +410,7 @@
       "UpstreamPathTemplate": "/api/v1/catalog/genders",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/catalog/genders",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -430,7 +430,7 @@
       "UpstreamPathTemplate": "/api/v1/catalog/userstatus",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/catalog/userstatus",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",

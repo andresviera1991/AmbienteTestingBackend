@@ -6,7 +6,7 @@
       "UpstreamPathTemplate": "/api/v1/Department/Departments/{provinceId}",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/Department/Departments/{provinceId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -26,7 +26,7 @@
       "UpstreamPathTemplate": "/api/v1/Locality/Localities/{departmentId}",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/Locality/Localities/{departmentId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -46,7 +46,7 @@
       "UpstreamPathTemplate": "/api/v1/Locality/Locality/{id}",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/Locality/Locality/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -66,7 +66,7 @@
       "UpstreamPathTemplate": "/api/v1/Province/Provinces",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/Province/Provinces",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -86,7 +86,7 @@
       "UpstreamPathTemplate": "/api/v1/Street/Streets",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/Street/Streets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",

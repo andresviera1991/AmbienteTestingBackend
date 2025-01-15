@@ -6,7 +6,7 @@
       "UpstreamPathTemplate": "/api/v1/user/list-tickets",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/user/list-tickets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.mistramites.api",
@@ -33,7 +33,7 @@
       "UpstreamPathTemplate": "/api/v1/user/get-ticket",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/user/get-ticket",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.mistramites.api",
@@ -60,7 +60,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/list-tickets",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/agent/list-tickets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.mistramites.api",
@@ -87,7 +87,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/get-ticket",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/agent/get-ticket",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.mistramites.api",

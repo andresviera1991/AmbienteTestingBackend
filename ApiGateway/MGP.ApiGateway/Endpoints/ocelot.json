@@ -6,7 +6,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/register",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -27,7 +27,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/register-by-agent",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -52,7 +52,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/validate",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -73,7 +73,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/login",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -94,7 +94,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/newtokens",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -115,7 +115,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/logout",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -136,7 +136,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/password/change",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -164,7 +164,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/password/send-email",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -185,7 +185,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/password/reset",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -206,7 +206,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/user/get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -234,7 +234,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/user/get-for-employee",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -262,7 +262,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/user/list-by-filters",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -290,7 +290,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -318,7 +318,7 @@
         "Patch"
       ],
       "DownstreamPathTemplate": "/api/v1/user/update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -346,7 +346,7 @@
         "Patch"
       ],
       "DownstreamPathTemplate": "/api/v1/user/update-for-employee",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -374,7 +374,7 @@
         "Delete"
       ],
       "DownstreamPathTemplate": "/api/v1/user/delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -402,7 +402,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/user/list-ids-by-filters",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -427,7 +427,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/genders",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -448,7 +448,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/userstatus",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.authentication.api",
@@ -469,7 +469,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/ticket/create-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -497,7 +497,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/create-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -525,7 +525,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/ticket/get-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -553,7 +553,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/get-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -581,7 +581,7 @@
         "Put"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/update-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -609,7 +609,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/ticket/create-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -637,7 +637,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/create-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -665,7 +665,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/ticket/get-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -693,7 +693,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/get-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -721,7 +721,7 @@
         "Put"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/update-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -749,7 +749,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/ticket/create-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -777,7 +777,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/create-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -805,7 +805,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/ticket/get-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -833,7 +833,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/get-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -861,7 +861,7 @@
         "Put"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/update-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -889,7 +889,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/supervisor/reassign-ticket",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -917,7 +917,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/list-tickets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -945,7 +945,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/ticket/list",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -973,7 +973,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/ticket/cancel",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1001,7 +1001,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/count-tickets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1029,7 +1029,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/document/add",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1057,7 +1057,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/document/add-for-employee",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1085,7 +1085,7 @@
         "Delete"
       ],
       "DownstreamPathTemplate": "/api/v1/document/delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1113,7 +1113,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/document/add-template",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1141,7 +1141,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/api/v1/document/update-template",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1169,7 +1169,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/document/get-templates",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1197,7 +1197,7 @@
         "Delete"
       ],
       "DownstreamPathTemplate": "/api/v1/document/remove-template",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1225,7 +1225,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/chat/get-messages",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1251,7 +1251,7 @@
         "Post"
       ],
       "DownstreamPathTemplate": "/chat/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1270,7 +1270,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/ticket-types",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1291,7 +1291,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/ticket-status",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1312,7 +1312,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/document-types",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1333,7 +1333,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/signature-options",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1354,7 +1354,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/expansion-options",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1375,7 +1375,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/card-pickup-options",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -1396,7 +1396,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/audit/audit",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.audit.api",
@@ -1424,7 +1424,7 @@
         "post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/register",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1448,7 +1448,7 @@
         "post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/login",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1469,7 +1469,7 @@
         "post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/new-tokens",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1490,7 +1490,7 @@
         "post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/logout",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1511,7 +1511,7 @@
         "post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/change-password",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1539,7 +1539,7 @@
         "post"
       ],
       "DownstreamPathTemplate": "/api/v1/auth/reset-password",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1560,7 +1560,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/menu/get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1588,7 +1588,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/get",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1616,7 +1616,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/supervisor/get-agent",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1644,7 +1644,7 @@
         "put"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/update",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1672,7 +1672,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/list-by-filters",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1700,7 +1700,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/list-by-ticket-type-id",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1728,7 +1728,7 @@
         "post"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/add-leave",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1756,7 +1756,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/list-agent-leave",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1784,7 +1784,7 @@
         "patch"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/agent-leave",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1812,7 +1812,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/next-available-agent",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1840,7 +1840,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/areas",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1868,7 +1868,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/roles",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1896,7 +1896,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/ticketstype",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1924,7 +1924,7 @@
         "get"
       ],
       "DownstreamPathTemplate": "/api/v1/catalog/user-status",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.backoffice.api",
@@ -1952,7 +1952,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/Department/Departments/{provinceId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -1973,7 +1973,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/Locality/Localities/{departmentId}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -1994,7 +1994,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/Locality/Locality/{id}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -2015,7 +2015,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/Province/Provinces",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -2036,7 +2036,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/Street/Streets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.location.api",
@@ -2057,7 +2057,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/user/list-tickets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.mistramites.api",
@@ -2085,7 +2085,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/user/get-ticket",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.mistramites.api",
@@ -2113,7 +2113,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/list-tickets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.mistramites.api",
@@ -2141,7 +2141,7 @@
         "Get"
       ],
       "DownstreamPathTemplate": "/api/v1/agent/get-ticket",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.mistramites.api",

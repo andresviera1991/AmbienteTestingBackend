@@ -110,7 +110,7 @@ public class DocumentService : IDocumentService
             }
             return documents;
         }
-        catch
+        catch(Exception E)
         {
             throw new DocumentUploadException();
         }

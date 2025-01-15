@@ -71,7 +71,11 @@ public class RegisterHandler : IRequestHandler<RegisterRequest, ResponseData<Reg
         {
             return await HandleException(Code.Created, [_messageManager.GetNotification(FunctionalMessages.ERROR_SEND_EMAIL_VALIDATE_USER)], response);
         }
-        catch (Exception)
+        catch (UserAlreadyException)
+        {
+            return await HandleException(Code.Conflict, [_messageManager.GetNotification(FunctionalMessages.USER_ALREADY_EXISTS)], response);
+        }
+        catch (Exception e)
         {
             return await HandleException(Code.ServiceUnavailable, [_messageManager.GetNotification(FunctionalMessages.SERVICE_UNAVAILABLE)]);
         }

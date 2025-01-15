@@ -1,0 +1,20 @@
+BASE DE DATOS COMANDOS
+
+AUTHENTICATION:
+dotnet ef database update --project ../MGP.Authentication.Persistance/MGP.Authentication.Persistance.csproj --startup-project MGP.Authentication.API.csproj --connection "Host=localhost;Port=5438;Username=postgres;Password=andresviera;Database=autenticacion;"
+
+DISCAPACIDAD:
+dotnet ef database update --project ../MGP.Discapacidad.Persistance/MGP.Discapacidad.Persistance.csproj --startup-project MGP.Discapacidad.API.csproj --connection "Host=localhost;Port=5438;Username=postgres;Password=andresviera;Database=discapacidad;"
+
+BACKOFFICE
+dotnet ef database update  --project ../MGP.Backoffice.Persistance/MGP.Backoffice.Persistance.csproj --startup-project MGP.Backoffice.API.csproj --connection "Host=localhost;Port=5438;Username=postgres;Password=andresviera;Database=backoffice;"
+
+LOCATION
+dotnet ef database update  --project ../MGP.Location.Persistance/MGP.Location.Persistance.csproj --startup-project MGP.Location.API.csproj --connection "Host=localhost;Port=5438;Username=postgres;Password=andresviera;Database=Location;"
+
+AUDIT
+dotnet ef database update  --project ../MGP.Audit.Persistance/MGP.Audit.Persistance.csproj --startup-project MGP.Audit.API.csproj --connection "Host=localhost;Port=5438;Username=postgres;Password=andresviera;Database=audit;"
+
+NOTIFICATION
+dotnet ef database update  --project ../MGP.Notifications.Persistance/MGP.Notifications.Persistance.csproj --startup-project MGP.Notifications.API.csproj --connection "Host=localhost;Port=5438;Username=postgres;Password=andresviera;Database=notification;"
+

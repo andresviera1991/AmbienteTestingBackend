@@ -6,7 +6,7 @@
       "UpstreamPathTemplate": "/api/v1/ticket/create-cud",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/ticket/create-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -33,7 +33,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/create-cud",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/agent/create-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -60,7 +60,7 @@
       "UpstreamPathTemplate": "/api/v1/ticket/get-cud",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/ticket/get-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -87,7 +87,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/get-cud",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/agent/get-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -114,7 +114,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/update-cud",
       "UpstreamHttpMethod": [ "Put" ],
       "DownstreamPathTemplate": "/api/v1/agent/update-cud",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -141,7 +141,7 @@
       "UpstreamPathTemplate": "/api/v1/ticket/create-sube",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/ticket/create-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -168,7 +168,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/create-sube",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/agent/create-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -195,7 +195,7 @@
       "UpstreamPathTemplate": "/api/v1/ticket/get-sube",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/ticket/get-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -222,7 +222,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/get-sube",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/agent/get-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -249,7 +249,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/update-sube",
       "UpstreamHttpMethod": [ "Put" ],
       "DownstreamPathTemplate": "/api/v1/agent/update-sube",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -276,7 +276,7 @@
       "UpstreamPathTemplate": "/api/v1/ticket/create-parking",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/ticket/create-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -303,7 +303,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/create-parking",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/agent/create-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -330,7 +330,7 @@
       "UpstreamPathTemplate": "/api/v1/ticket/get-parking",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/ticket/get-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -357,7 +357,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/get-parking",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/agent/get-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -384,7 +384,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/update-parking",
       "UpstreamHttpMethod": [ "Put" ],
       "DownstreamPathTemplate": "/api/v1/agent/update-parking",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -411,7 +411,7 @@
       "UpstreamPathTemplate": "/api/v1/supervisor/reassign-ticket",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/supervisor/reassign-ticket",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -438,7 +438,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/list-tickets",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/agent/list-tickets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -465,7 +465,7 @@
       "UpstreamPathTemplate": "/api/v1/ticket/list",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/ticket/list",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -492,7 +492,7 @@
       "UpstreamPathTemplate": "/api/v1/ticket/cancel",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/ticket/cancel",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -519,7 +519,7 @@
       "UpstreamPathTemplate": "/api/v1/agent/count-tickets",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/agent/count-tickets",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -546,7 +546,7 @@
       "UpstreamPathTemplate": "/api/v1/document/add",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/document/add",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -573,7 +573,7 @@
       "UpstreamPathTemplate": "/api/v1/document/add-for-employee",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/document/add-for-employee",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -600,7 +600,7 @@
       "UpstreamPathTemplate": "/api/v1/document/delete",
       "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamPathTemplate": "/api/v1/document/delete",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -627,7 +627,7 @@
       "UpstreamPathTemplate": "/api/v1/document/add-template",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/document/add-template",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -654,7 +654,7 @@
       "UpstreamPathTemplate": "/api/v1/document/update-template",
       "UpstreamHttpMethod": [ "Post" ],
       "DownstreamPathTemplate": "/api/v1/document/update-template",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -681,7 +681,7 @@
       "UpstreamPathTemplate": "/api/v1/document/get-templates",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/document/get-templates",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -708,7 +708,7 @@
       "UpstreamPathTemplate": "/api/v1/document/remove-template",
       "UpstreamHttpMethod": [ "Delete" ],
       "DownstreamPathTemplate": "/api/v1/document/remove-template",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -735,7 +735,7 @@
       "UpstreamPathTemplate": "/api/v1/chat/get-messages",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/chat/get-messages",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -759,7 +759,7 @@
       "UpstreamPathTemplate": "/chat/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post" ],
       "DownstreamPathTemplate": "/chat/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "EnableWebSocket": true,
       "DownstreamHostAndPorts": [
         {
@@ -778,7 +778,7 @@
       "UpstreamPathTemplate": "/api/v1/catalog/ticket-types",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/catalog/ticket-types",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -798,7 +798,7 @@
       "UpstreamPathTemplate": "/api/v1/catalog/ticket-status",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/catalog/ticket-status",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -818,7 +818,7 @@
       "UpstreamPathTemplate": "/api/v1/catalog/document-types",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/catalog/document-types",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -838,7 +838,7 @@
       "UpstreamPathTemplate": "/api/v1/catalog/signature-options",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/catalog/signature-options",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -858,7 +858,7 @@
       "UpstreamPathTemplate": "/api/v1/catalog/expansion-options",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/catalog/expansion-options",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
@@ -878,7 +878,7 @@
       "UpstreamPathTemplate": "/api/v1/catalog/card-pickup-options",
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/v1/catalog/card-pickup-options",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "mgp.discapacidad.api",
